@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+               
+     <context:annotation-config/>
+
+     <context:component-scan base-package = "com.anotationtry"></context:component-scan>
+
+    <!-- <bean class="com.constructorPass.Person" name="person">
+
+        <constructor-arg>
+            <value>Aman</value>
+        </constructor-arg>
+
+        <constructor-arg>
+        
+            <value>1234</value>
+            
+        </constructor-arg>
+
+    </bean> -->
+
+    <bean class="com.ConstructorExample.Addition" name="add">
+        <constructor-arg value="22" type="int" index="1"/>
+        <constructor-arg value="33" type="int" index="0"/>
+    </bean>
+
+     <!-- <bean id="tyre" class="com.anotationtry.tyre"></bean> -->
+
+
+     
+</beans>
